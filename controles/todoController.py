@@ -79,6 +79,16 @@ class TodoContollrer:
 
     async def gi_2(update: Update, context: CallbackContext):
         help_text = '<a href= "https://structure.sfu-kras.ru/node/352#staff">Кафедра истории России, мировых и региональных цивилизацийх</a>' + '\n\n'
+        for command, description in COMMANDS.gi_2.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def gi_3(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/358#staff">Кафедра культурологии и искусствоведения</a>' + '\n\n'
+        for command, description in COMMANDS.gi_3.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
 
         #Da informcaion acerca del bot
