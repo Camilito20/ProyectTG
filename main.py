@@ -19,6 +19,9 @@ application.add_handler( CommandHandler( "teachers", TodoContollrer.teachers))
 application.add_handler( CommandHandler( "Bii", TodoContollrer.ВИИ))
 application.add_handler( CommandHandler( "Gi", TodoContollrer.ГИ))
 application.add_handler( CommandHandler( "gi_1", TodoContollrer.gi_1))
+application.add_handler( CommandHandler( "gi_2", TodoContollrer.gi_2))
+application.add_handler( CommandHandler( "gi_3", TodoContollrer.gi_3))
+application.add_handler( CommandHandler( "gi_4", TodoContollrer.gi_4))
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)
