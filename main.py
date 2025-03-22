@@ -15,13 +15,14 @@ application.add_handler( CommandHandler("menu_SFU", TodoContollrer.menu_sfu))
 application.add_handler( CommandHandler( "ekursi", TodoContollrer.ekursi))
 application.add_handler( CommandHandler("moi_sfu", TodoContollrer.moi_sfu))
 application.add_handler( CommandHandler( "teachers", TodoContollrer.teachers))
-"""MENU INSTITUTOS Y KAFEDRAS"""
+"""Instituto 'Военно-инженерный институт'"""
 application.add_handler( CommandHandler( "Bii", TodoContollrer.ВИИ))
+"""Instituto 'Гуманитарный институт'"""
 application.add_handler( CommandHandler( "Gi", TodoContollrer.ГИ))
 application.add_handler( CommandHandler( "gi_1", TodoContollrer.gi_1))
 application.add_handler( CommandHandler( "gi_2", TodoContollrer.gi_2))
 application.add_handler( CommandHandler( "gi_3", TodoContollrer.gi_3))
 application.add_handler( CommandHandler( "gi_4", TodoContollrer.gi_4))
-
+application.add_handler( CommandHandler( "gi_5", TodoContollrer.gi_5))
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)

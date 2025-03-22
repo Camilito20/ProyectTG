@@ -73,23 +73,47 @@ class TodoContollrer:
 
     async def gi_1(update: Update, context: CallbackContext):
         help_text = '<a href= "https://structure.sfu-kras.ru/node/355#staff">Кафедра информационных технологий в креативных и культурных индустриях</a>' + '\n\n'
+        mensaje = 'si necesitas mas informacion sobre profesores la puedes encontrarla aqui ' + '<a href= "https://structure.sfu-kras.ru/node/355#staff">КИТвКиКИ</a>'
         for command, description in COMMANDS.gi_1.items():
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text(mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def gi_2(update: Update, context: CallbackContext):
         help_text = '<a href= "https://structure.sfu-kras.ru/node/352#staff">Кафедра истории России, мировых и региональных цивилизацийх</a>' + '\n\n'
+        mensaje = 'si necesitas mas informacion sobre profesores la puedes encontrarla aqui ' + '<a href= "https://structure.sfu-kras.ru/node/352#staff">КИРМиРЦ</a>'
         for command, description in COMMANDS.gi_2.items():
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text(mensaje, parse_mode="HTML", disable_web_page_preview=True)
 
 
     async def gi_3(update: Update, context: CallbackContext):
         help_text = '<a href= "https://structure.sfu-kras.ru/node/358#staff">Кафедра культурологии и искусствоведения</a>' + '\n\n'
+        mensaje = 'si necesitas mas informacion sobre profesores la puedes encontrarla aqui ' + '<a href= "https://structure.sfu-kras.ru/node/358#staff">ККИИ</a>'
         for command, description in COMMANDS.gi_3.items():
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text(mensaje, parse_mode="HTML", disable_web_page_preview=True)
 
+
+    async  def gi_4(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/357">Кафедра рекламы и социально-культурной деятельности</a>' + '\n\n'
+        mensaje = 'si necesitas mas informacion sobre profesores la puedes encontrarla aqui ' + '<a href= "https://structure.sfu-kras.ru/node/357#staff">КРиСКД</a>'
+        for command, description in COMMANDS.gi_4.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text(mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def gi_5(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/354">Кафедра философии</a>' + '\n\n'
+        mensaje = 'si necesitas mas informacion sobre profesores la puedes encontrarla aqui ' + '<a href= "https://structure.sfu-kras.ru/node/354#staff">КФ</a>'
+        for command, description in COMMANDS.gi_5.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text(mensaje, parse_mode="HTML", disable_web_page_preview=True)
 
         #Da informcaion acerca del bot
     async def Info(update: Update, context: ContextTypes.DEFAULT_TYPE):
