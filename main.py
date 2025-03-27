@@ -27,7 +27,7 @@ application.add_handler( CommandHandler( "gi_5", TodoContollrer.gi_5))
 application.add_handler( CommandHandler( "gi_6", TodoContollrer.gi_6))
 application.add_handler( CommandHandler( "gi_7", TodoContollrer.gi_7))
 application.add_handler( CommandHandler( "gi_8", TodoContollrer.gi_8))
-
+application.add_handler( CommandHandler( "gi_9", TodoContollrer.gi_9))
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)

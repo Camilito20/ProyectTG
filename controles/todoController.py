@@ -136,6 +136,13 @@ class TodoContollrer:
         await update.message.reply_text("No hay profesores")
 
 
+    async def gi_9(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/2382#staff">Музей археологии и этнографии Енисейской Сибири</a>' + '\n\n'
+        for command, description in COMMANDS.gi_9.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
         #Da informcaion acerca del bot
     async def Info(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Este es un bot que te va ayudar a encontar informacion sobre la universidad de SFU")
