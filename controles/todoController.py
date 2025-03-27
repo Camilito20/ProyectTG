@@ -63,7 +63,7 @@ class TodoContollrer:
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
-
+    """Instituto Гуманитарный институт"""
     async def ГИ(upate: Update, context: CallbackContext):
         help_text = "DE que cafedra deceas saver los profesores:\n\n"
         for command, description in COMMANDS.Gi.items():
@@ -141,6 +141,30 @@ class TodoContollrer:
         for command, description in COMMANDS.gi_9.items():
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def gi_10(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/351#staff">Учебно-организационный отдел</a>' + '\n\n'
+        for command, description in COMMANDS.gi_10.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    """Istututo Инженерно-строительный институт"""
+    async def ICI(upate: Update, context: CallbackContext):
+        help_text = "De que cafedra deceas saver los profesores:\n\n"
+        for command, description in COMMANDS.ICI.items():
+            help_text += f"{command}: {description}\n"
+        await upate.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def ici_1(update: Update, context: CallbackContext):
+        mensaje = '<a href= "https://structure.sfu-kras.ru/node/478#staff">КПЗЭН</a>'
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/478#staff">Кафедра проектирования зданий и экспертизы недвижимости</a>' + '\n\n'
+        for command, description in COMMANDS.ici_1.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("si necesitas mas informacion de profesores puedes encontrar aqui: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
 
 
         #Da informcaion acerca del bot

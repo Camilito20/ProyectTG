@@ -28,6 +28,11 @@ application.add_handler( CommandHandler( "gi_6", TodoContollrer.gi_6))
 application.add_handler( CommandHandler( "gi_7", TodoContollrer.gi_7))
 application.add_handler( CommandHandler( "gi_8", TodoContollrer.gi_8))
 application.add_handler( CommandHandler( "gi_9", TodoContollrer.gi_9))
+application.add_handler( CommandHandler( "gi_9", TodoContollrer.gi_9))
+application.add_handler( CommandHandler( "gi_10", TodoContollrer.gi_10))
+"""Institudo 'Инженерно-строительный институт'"""
+application.add_handler( CommandHandler( "ICI", TodoContollrer.ICI))
+application.add_handler( CommandHandler( "ici_1", TodoContollrer.ici_1))
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)
