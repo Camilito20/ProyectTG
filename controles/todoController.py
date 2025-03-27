@@ -129,6 +129,13 @@ class TodoContollrer:
             help_text += f"{command}: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
+    async def gi_8(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/55860">Лаборатория компьютерной графики</a>' + '\n\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("No hay profesores")
+
+
         #Da informcaion acerca del bot
     async def Info(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Este es un bot que te va ayudar a encontar informacion sobre la universidad de SFU")

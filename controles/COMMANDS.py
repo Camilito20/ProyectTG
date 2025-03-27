@@ -181,7 +181,3 @@ gi_7 = {
     "\nСектор ": "архитектурного наследия",
     "\nГевель Екатерина Васильевна": "заведующий"
 }
-ikit= {
-    "1": '<a href="https://ikit.sfu-kras.ru/kafi">Программной Инженерии</a>',
-    "2": '<a href="https://ikit.sfu-kras.ru/kafi">ajsdasjds'
-}
