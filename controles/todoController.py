@@ -166,6 +166,41 @@ class TodoContollrer:
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
         await update.message.reply_text("si necesitas mas informacion de profesores puedes encontrar aqui: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
 
+    async def ici_2(update: Update, context: CallbackContext):
+        mensaje = '<a href= "https://structure.sfu-kras.ru/node/473#staff">КСКУС</a>'
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/473">Кафедра строительных конструкций и управляемых систем</a>' + '\n\n'
+        for command, description in COMMANDS.ici_2.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("aqui puedes encontrar mas informacion: "+ mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def ici_3(update: Update, context: CallbackContext):
+        mensaje = '<a href= "https://structure.sfu-kras.ru/node/473#staff">КСМТС</a>'
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/473">Кафедра строительных материалов и технологии строительства</a>' + '\n\n'
+        for command, description in COMMANDS.ici_3.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("Aqui puedes encontrar mas informacion: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def ici_4(update: Update, context: CallbackContext):
+        mensaje = '<a href= "https://structure.sfu-kras.ru/node/464#staff">КАДИГС</a>'
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/464#staff">Кафедра автомобильных дорог и городских сооружений</a>' + '\n\n'
+        for command, description in COMMANDS.ici_4.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("Aqui puedes encontrar mas informacion: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def ici_5(update: Update, context: CallbackContext):
+        mensaje = '<a href= "https://structure.sfu-kras.ru/node/468#staff">КИСЗС</a>'
+        help_text = '<a href= "https://structure.sfu-kras.ru/node/468#staff">Кафедра инженерных систем зданий и сооружений</a>' + '\n\n'
+        for command, description in COMMANDS.ici_5.items():
+            help_text += f"{command}: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+        await update.message.reply_text("Aqui puedes encontrar mas informacion: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
 
         #Da informcaion acerca del bot
     async def Info(update: Update, context: ContextTypes.DEFAULT_TYPE):
