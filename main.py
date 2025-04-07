@@ -41,6 +41,16 @@ application.add_handler( CommandHandler( "ici_3", TodoContollrer.ici_3))
 application.add_handler( CommandHandler( "ici_4", TodoContollrer.ici_4))
 application.add_handler( CommandHandler( "ici_5", TodoContollrer.ici_5))
 
+"""Институт архитектуры и дизайна"""
+application.add_handler( CommandHandler( "IAID", TodoContollrer.iaid))
+application.add_handler( CommandHandler( "IAID_1", TodoContollrer.iaid_1))
+application.add_handler( CommandHandler( "IAID_2", TodoContollrer.iaid_2))
+application.add_handler( CommandHandler( "IAID_3", TodoContollrer.iaid_3))
+application.add_handler( CommandHandler( "IAID_4", TodoContollrer.iaid_4))
+application.add_handler( CommandHandler( "IAID_5", TodoContollrer.iaid_5))
+application.add_handler( CommandHandler( "IAID_6", TodoContollrer.iaid_6))
+
+
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)
