@@ -87,8 +87,9 @@ class TodoContollrer:
 
     """Instituto Гуманитарный институт"""
     async def ГИ(upate: Update, context: CallbackContext):
-        help_text = "esta es la cafedra:\n\n"
-        for command, description in COMMANDS.Gi.items():
+        texto_html = '<a href = "https://hi.sfu-kras.ru/ru">ГИ</a>\n\n'
+        help_text = f"Гуманитарный институт({texto_html}):\n\n"
+        for command, description in COMMANDS.GI.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await upate.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
@@ -180,11 +181,19 @@ class TodoContollrer:
 
     """Istututo Инженерно-строительный институт"""
     async def ICI(upate: Update, context: CallbackContext):
-        help_text = "De que cafedra deceas saver los profesores:\n\n"
+        texto_html = '<a href = "https://isi.sfu-kras.ru/">ИСИ</a>'
+        help_text = f"Инженерно-строительный институт({texto_html}):\n\n"
         for command, description in COMMANDS.ICI.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await upate.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
+    async def profesores_ICI(update: Update, context: CallbackContext):
+        texto_html = '<a href = "https://structure.sfu-kras.ru/isi#structure">Инженерно-строительный институт</a>\n\n'
+        help_text = f"Это профессора {texto_html}"
+        for command, description in COMMANDS.techers_BII.items():
+            help_text += f'<u><b>{command}</b></u>: {description}'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
     async def ici_1(update: Update, context: CallbackContext):
         mensaje = '<a href= "https://structure.sfu-kras.ru/node/478#staff">КПЗЭН</a>'

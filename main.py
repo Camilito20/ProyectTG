@@ -25,6 +25,7 @@ application.add_handler( CommandHandler( "techers_BII", TodoContollrer.techers_B
 
 """Instituto 'Гуманитарный институт'"""
 application.add_handler( CommandHandler( "Gi", TodoContollrer.ГИ))
+application.add_handler( CommandHandler( "techers_GI", TodoContollrer.profesir_GI))
 application.add_handler( CommandHandler( "gi_1", TodoContollrer.gi_1))
 application.add_handler( CommandHandler( "gi_2", TodoContollrer.gi_2))
 application.add_handler( CommandHandler( "gi_3", TodoContollrer.gi_3))
@@ -39,6 +40,7 @@ application.add_handler( CommandHandler( "gi_10", TodoContollrer.gi_10))
 
 """Institudo 'Инженерно-строительный институт'"""
 application.add_handler( CommandHandler( "ICI", TodoContollrer.ICI))
+application.add_handler( CommandHandler( "techers_ICI", TodoContollrer.profesores_ICI))
 application.add_handler( CommandHandler( "ici_1", TodoContollrer.ici_1))
 application.add_handler( CommandHandler( "ici_2", TodoContollrer.ici_2))
 application.add_handler( CommandHandler( "ici_3", TodoContollrer.ici_3))
