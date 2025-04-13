@@ -14,10 +14,14 @@ application.add_handler( CommandHandler( "info_bot", TodoContollrer.Info))
 application.add_handler( CommandHandler("menu_SFU", TodoContollrer.menu_sfu))
 application.add_handler( CommandHandler( "ekursi", TodoContollrer.ekursi))
 application.add_handler( CommandHandler("moi_sfu", TodoContollrer.moi_sfu))
-application.add_handler( CommandHandler( "teachers", TodoContollrer.teachers))
+application.add_handler( CommandHandler( "institute", TodoContollrer.teachers))
 
 """Instituto 'Военно-инженерный институт'"""
 application.add_handler( CommandHandler( "Bii", TodoContollrer.ВИИ))
+application.add_handler( CommandHandler( "information_BII", TodoContollrer.information_BII))
+application.add_handler( CommandHandler( "address_BII", TodoContollrer.direccion_BII))
+application.add_handler( CommandHandler( "techers_BII", TodoContollrer.techers_BII))
+
 
 """Instituto 'Гуманитарный институт'"""
 application.add_handler( CommandHandler( "Gi", TodoContollrer.ГИ))

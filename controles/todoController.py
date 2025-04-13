@@ -51,25 +51,53 @@ class TodoContollrer:
         await update.message.reply_text(texto_html + "Это страница новостей о университете, на которой вы можете проверить свои оценки, свой средний балл, предметы, которые будут у вас в течение года, и т.д.", parse_mode="HTML")
 
     async def teachers(update: Update, context: CallbackContext):
-        help_text = "Из какого института вы хотите преподавателей?:\n\n"
+        help_text = "О каком институте вы хотите получить информацию?:\n\n"
         for command, description in COMMANDS.COMMANDS_inst.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML")
 
+    """Военно-инженерном институте"""
     async def ВИИ(update: Update, context: CallbackContext):
         texto_htlm = '<a href="https://e.sfu-kras.ru/login/index.php">ВИИ</a>'
-        help_text = f'profesores del instituto {texto_htlm}:\n\n'
+        help_text = f'Военно-инженерном институте ({texto_htlm}):\n\n'
         for command, description in COMMANDS.Bii.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+    async  def techers_BII(update: Update, context: ContextTypes):
+        texto_htlm = '<a href = "https://structure.sfu-kras.ru/vii#staff">ВИИ</a>'
+        help_text = "Это профессора Военно-инженерного института."+ texto_htlm
+        for command, description in COMMANDS.techers_BII.items():
+            help_text += f'<u><b>{command}</b></u>: {description}'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_BII(update: Update, context: ContextTypes):
+        help_text = 'Вот адрес иститута\n\n'
+        primera_direccion = '<a href = "https://2gis.ru/krasnoyarsk/geo/986145966616740">улица Академгородок, 13а</a>\n и \n'
+        segunda_direcion = '<a href = "https://2gis.ru/krasnoyarsk/geo/985690700180809">улица Борисова, 20</a>'
+        await update.message.reply_text(help_text + primera_direccion + segunda_direcion, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def information_BII(update: Update, context: CallbackContext):
+        help_text = '<a href= "https://vii.sfu-kras.ru/">Военно-инженерном институте</a>'
+        texto = f'информация об {help_text}' + '\n\n'
+        for commands, description in COMMANDS.information_BII.items():
+            texto += f'<u><b>{commands}</b></u>: {description}'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
     """Instituto Гуманитарный институт"""
     async def ГИ(upate: Update, context: CallbackContext):
-        help_text = "DE que cafedra deceas saver los profesores:\n\n"
+        help_text = "esta es la cafedra:\n\n"
         for command, description in COMMANDS.Gi.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await upate.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
+    async def profesir_GI(update: Update, context: CallbackContext):
+        help_text = "estos son los profesores de GI: \n\n"
+        for command, description in COMMANDS.profesores_Gi.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text)
 
     async def gi_1(update: Update, context: CallbackContext):
         help_text = '<a href= "https://structure.sfu-kras.ru/node/355#staff">Кафедра информационных технологий в креативных и культурных индустриях</a>' + '\n\n'
