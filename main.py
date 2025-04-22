@@ -60,6 +60,25 @@ application.add_handler( CommandHandler( "IAID_4", TodoContollrer.iaid_4))
 application.add_handler( CommandHandler( "IAID_5", TodoContollrer.iaid_5))
 application.add_handler( CommandHandler( "IAID_6", TodoContollrer.iaid_6))
 
+"""Институт инженерной физики и радиоэлектроники"""
+application.add_handler( CommandHandler( "IIFIRE", TodoContollrer.iifire))
+application.add_handler( CommandHandler( "IIFIRE_1", TodoContollrer.iifire_1))
+application.add_handler( CommandHandler( "techers_IIFIRE", TodoContollrer.profesore_iifire))
+application.add_handler( CommandHandler( "IIFIRE_2", TodoContollrer.iifire_2))
+application.add_handler( CommandHandler( "IIFIRE_3", TodoContollrer.iifire_3))
+application.add_handler( CommandHandler( "IIFIRE_4", TodoContollrer.iifire_4))
+application.add_handler( CommandHandler( "IIFIRE_5", TodoContollrer.iifire_5))
+application.add_handler( CommandHandler( "IIFIRE_6", TodoContollrer.iifire_6))
+application.add_handler( CommandHandler( "IIFIRE_7", TodoContollrer.iifire_7))
+application.add_handler( CommandHandler( "IIFIRE_8", TodoContollrer.iifire_8))
+application.add_handler( CommandHandler( "IIFIRE_9", TodoContollrer.iifire_9))
+application.add_handler( CommandHandler( "IIFIRE_10", TodoContollrer.iifire_10))
+application.add_handler( CommandHandler( "IIFIRE_11", TodoContollrer.iifire_11))
+application.add_handler( CommandHandler( "IIFIRE_12", TodoContollrer.iifire_12))
+application.add_handler( CommandHandler( "IIFIRE_13", TodoContollrer.iifire_13))
+application.add_handler( CommandHandler( "IIFIRE_14", TodoContollrer.iifire_14))
+application.add_handler( CommandHandler( "IIFIRE_15", TodoContollrer.iifire_15))
+
 
 
 

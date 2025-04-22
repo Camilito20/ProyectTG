@@ -313,12 +313,112 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
-        #Da informcaion acerca del bot
+    #Институт инженерной физики и радиоэлектроники
+    async def iifire(update: Update, context: CallbackContext):
+        help_text = '<a href="https://efir.sfu-kras.ru/">ИНСТИТУТ ИНЖЕНЕРНОЙ ФИЗИКИ И РАДИОЭЛЕКТРОНИКИ</a>' + '\n\n'
+        for command, description in COMMANDS.iifire.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+    async  def profesore_iifire(update: Update, context: CallbackContext):
+        help_text = 'Это профессора <a href = "https://structure.sfu-kras.ru/efir#structure">ИИФиРЭ</a>' + '\n\n'
+        for commands, description in COMMANDS.profesores_iifire.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
-    async def Info(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def iifire_1(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/227#staff">Базовая кафедра инфокоммуникаций</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_1.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_2(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/236#staff">Базовая кафедра радиоэлектронной техники информационных систем</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_2.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_3(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_3.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_4(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/225#staff">Базовая кафедра фотоники и лазерных технологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_4.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_5(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/238#staff">Кафедра общей физики</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_5.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_6(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/229#staff">Кафедра приборостроения и наноэлектроники</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_6.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_7(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/228#staff">Кафедра радиотехники</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_7.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_8(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/230#staff">Кафедра радиоэлектронных систем</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_8.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_9(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/226#staff">Кафедра теоретической физики и волновых явлений</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_9.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_10(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/224#staff">Кафедра теплофизики</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_10.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_11(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_11.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_12(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_12.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_13(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_13.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_14(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_14.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def iifire_15(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        for command, descriptopn in COMMANDS.iifire_15.items():
+            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    # Da informcaion acerca del bot
+    async def Info(update: Update, context: CallbackContext):
         await update.message.reply_text("Este es un bot que te va ayudar a encontar informacion sobre la universidad de SFU")
-
 
     #Da todos los comandos disponibles
     async def help_command(update: Update, context: CallbackContext) -> None:
