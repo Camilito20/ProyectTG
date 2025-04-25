@@ -62,8 +62,9 @@ application.add_handler( CommandHandler( "IAID_6", TodoContollrer.iaid_6))
 
 """Институт инженерной физики и радиоэлектроники"""
 application.add_handler( CommandHandler( "IIFIRE", TodoContollrer.iifire))
-application.add_handler( CommandHandler( "IIFIRE_1", TodoContollrer.iifire_1))
 application.add_handler( CommandHandler( "techers_IIFIRE", TodoContollrer.profesore_iifire))
+application.add_handler( CommandHandler( "address_IIFIRE", TodoContollrer.direccion_IIFIRE))
+application.add_handler( CommandHandler( "IIFIRE_1", TodoContollrer.iifire_1))
 application.add_handler( CommandHandler( "IIFIRE_2", TodoContollrer.iifire_2))
 application.add_handler( CommandHandler( "IIFIRE_3", TodoContollrer.iifire_3))
 application.add_handler( CommandHandler( "IIFIRE_4", TodoContollrer.iifire_4))
@@ -79,6 +80,23 @@ application.add_handler( CommandHandler( "IIFIRE_13", TodoContollrer.iifire_13))
 application.add_handler( CommandHandler( "IIFIRE_14", TodoContollrer.iifire_14))
 application.add_handler( CommandHandler( "IIFIRE_15", TodoContollrer.iifire_15))
 
+"""Институт космических и информационных технологий"""
+application.add_handler( CommandHandler( "IKIT", TodoContollrer.IKIT))
+application.add_handler( CommandHandler( "address_IKIT", TodoContollrer.direccion_IKIT))
+application.add_handler( CommandHandler( "techers_IKIT", TodoContollrer.profesores_IKIT))
+application.add_handler( CommandHandler( "IKIT_1", TodoContollrer.IKIT_1))
+application.add_handler( CommandHandler( "IKIT_2", TodoContollrer.IKIT_2))
+application.add_handler( CommandHandler( "IKIT_3", TodoContollrer.IKIT_3))
+application.add_handler( CommandHandler( "IKIT_4", TodoContollrer.IKIT_4))
+application.add_handler( CommandHandler( "IKIT_5", TodoContollrer.IKIT_5))
+application.add_handler( CommandHandler( "IKIT_6", TodoContollrer.IKIT_6))
+application.add_handler( CommandHandler( "IKIT_7", TodoContollrer.IKIT_7))
+application.add_handler( CommandHandler( "IKIT_8", TodoContollrer.IKIT_8))
+application.add_handler( CommandHandler( "IKIT_9", TodoContollrer.IKIT_9))
+application.add_handler( CommandHandler( "IKIT_10", TodoContollrer.IKIT_10))
+application.add_handler( CommandHandler( "IKIT_11", TodoContollrer.IKIT_11))
+application.add_handler( CommandHandler( "IKIT_12", TodoContollrer.IKIT_12))
+application.add_handler( CommandHandler( "IKIT_13", TodoContollrer.IKIT_13))
 
 
 

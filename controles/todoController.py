@@ -48,10 +48,12 @@ class TodoContollrer:
         mensaje = '<a href="https://e.sfu-kras.ru/login/index.php">ekursi</a>' + '\n'
         await update.message.reply_text(mensaje + 'Esta es la pagina la cual nos mandan los deberes o informacion sobre las materias que tengamos', parse_mode="HTML")
 
+
     async def moi_sfu(update: Update, context: CallbackContext):
         texto_html = '<a href="https://i.sfu-kras.ru/">Мой СФУ</a>' + '\n'
 
         await update.message.reply_text(texto_html + "Это страница новостей о университете, на которой вы можете проверить свои оценки, свой средний балл, предметы, которые будут у вас в течение года, и т.д.", parse_mode="HTML")
+
 
     async def teachers(update: Update, context: CallbackContext):
         help_text = "О каком институте вы хотите получить информацию?:\n\n"
@@ -67,12 +69,14 @@ class TodoContollrer:
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async  def techers_BII(update: Update, context: ContextTypes):
         texto_htlm = '<a href = "https://structure.sfu-kras.ru/vii#staff">ВИИ</a>'
         help_text = "Это профессора Военно-инженерного института."+ texto_htlm
         for command, description in COMMANDS.techers_BII.items():
             help_text += f'<u><b>{command}</b></u>: {description}'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def direccion_BII(update: Update, context: ContextTypes):
         help_text = 'Вот адрес иститута\n\n'
@@ -95,6 +99,7 @@ class TodoContollrer:
         for command, description in COMMANDS.GI.items():
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await upate.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def direcicion_GI(update: Update, context: CallbackContext):
         help_text = 'Вот адрес Гуманитарный институтa\n\n'
@@ -210,6 +215,7 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def ici_1(update: Update, context: CallbackContext):
         mensaje = '<a href= "https://structure.sfu-kras.ru/node/478#staff">КПЗЭН</a>'
         help_text = '<a href= "https://structure.sfu-kras.ru/node/478#staff">Кафедра проектирования зданий и экспертизы недвижимости</a>' + '\n\n'
@@ -217,6 +223,7 @@ class TodoContollrer:
             help_text += f"<u><b>{command}</b></u>: {description}\n"
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
         await update.message.reply_text("si necesitas mas informacion de profesores puedes encontrar aqui: " + mensaje, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def ici_2(update: Update, context: CallbackContext):
         mensaje = '<a href= "https://structure.sfu-kras.ru/node/473#staff">КСКУС</a>'
@@ -261,9 +268,11 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def adress_IAID(update: Update, context: CallbackContext):
         direcion = '<a href = "https://2gis.ru/krasnoyarsk/geo/986145966853046">Svobodnyy Ave, 82А, Krasnoyarsk, Krasnoyarsk Krai</a>'
         await update.message.reply_text("Адрес Института архитектуры и дизайна \n\n" + direcion, parse_mode="HTML")
+
 
     async def profesores_IAID(update: Update, contexto: CallbackContext):
         help_text = 'преподаватели <a href = "https://structure.sfu-kras.ru/iad#staff">ИАиД' + '\n\n'
@@ -320,11 +329,18 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
+    async def direccion_IIFIRE(update: Update, context: CallbackContext):
+        direccion = '<a href = "https://2gis.ru/krasnoyarsk/geo/986145966616735">улица Академика Киренского, 28</a>'
+        await update.message.reply_text("Адрес Институт инженерной физики и радиоэлектроники\n\n" + direccion, parse_mode="HTML")
+
+
     async  def profesore_iifire(update: Update, context: CallbackContext):
         help_text = 'Это профессора <a href = "https://structure.sfu-kras.ru/efir#structure">ИИФиРЭ</a>' + '\n\n'
         for commands, description in COMMANDS.profesores_iifire.items():
             help_text += f'<u><b>{commands}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_1(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/227#staff">Базовая кафедра инфокоммуникаций</a>' + '\n\n'
@@ -332,11 +348,13 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_2(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/236#staff">Базовая кафедра радиоэлектронной техники информационных систем</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_2.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_3(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
@@ -344,11 +362,13 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_4(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/225#staff">Базовая кафедра фотоники и лазерных технологий</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_4.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_5(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/238#staff">Кафедра общей физики</a>' + '\n\n'
@@ -356,11 +376,13 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_6(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/229#staff">Кафедра приборостроения и наноэлектроники</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_6.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_7(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/228#staff">Кафедра радиотехники</a>' + '\n\n'
@@ -368,11 +390,13 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_8(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/230#staff">Кафедра радиоэлектронных систем</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_8.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_9(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/226#staff">Кафедра теоретической физики и волновых явлений</a>' + '\n\n'
@@ -380,40 +404,153 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_10(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/224#staff">Кафедра теплофизики</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_10.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_11(update: Update, context: CallbackContext):
-        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/239">Кафедра физики</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_11.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_12(update: Update, context: CallbackContext):
-        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/240">Кафедра экспериментальной физики и инновационных технологий</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_12.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_13(update: Update, context: CallbackContext):
-        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/361#staff">Кафедра ЮНЕСКО «Новые материалы и технологии»</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_13.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+
     async def iifire_14(update: Update, context: CallbackContext):
-        help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
-        for command, descriptopn in COMMANDS.iifire_14.items():
-            help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/231">Лаборатория беспроводных систем передачи информации</a>' + '\n\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
 
     async def iifire_15(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/237#staff">Базовая кафедра физики твёрдого тела и нанотехнологий</a>' + '\n\n'
         for command, descriptopn in COMMANDS.iifire_15.items():
             help_text += f'<u><b>{command}</b></u>: {descriptopn}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    #Институт космических и информационных технологий
+    async  def IKIT(update: Update, context: CallbackContext):
+        help_text = "Институт космических и информационных технологий " + '<a href = "https://ikit.sfu-kras.ru/">ИКИТ</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def direccion_IKIT(update: Update, context: CallbackContext):
+        direccion = '<a href = "https://2gis.ru/krasnoyarsk/geo/986145966616730/92.797026,55.994337">улица Академика Киренского, 26 к1</a>'
+        await update.message.reply_text("Адрес Институт космических и информационных технологий \n\n" + direccion, parse_mode="HTML")
+
+    async def profesores_IKIT(update: Update, context: CallbackContext):
+        help_text = 'Это профессора<a href = "ИКИТ"></a>' + '\n\n'
+        for command, description in COMMANDS.profesores_IKIT.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_1(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/385#staff">Базовая кафедра геоинформационных систем</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_1.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_2(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/2146#staff">Базовая кафедра интеллектуальных систем управления</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_2.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_3(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/392#staff">Базовая кафедра информационных технологий на радиоэлектронном производстве</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_3.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_4(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/363#staff">Информационно-телекоммуникационный центр</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_4.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_5(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/391#staff">Кафедра высокопроизводительных вычислений</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_5.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_6(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/372#staff">Кафедра вычислительной техники </a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_6.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_7(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/383#staff">Кафедра информационной безопасности</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_7.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_8(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/380#staff">Кафедра информационных систем</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_8.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_9(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/381#staff">Кафедра прикладной математики и анализа данных</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_9.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_10(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/387#staff">Кафедра программной инженерии</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_10.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_11(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/386#staff">Кафедра разговорного иностранного языка</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_11.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_12(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/367#staff">Кафедра систем автоматики, автоматизированного управления и проектирования </a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_12.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async  def IKIT_13(update: Update, context: CallbackContext):
+        help_text ='<a href = "https://structure.sfu-kras.ru/node/376#staff">Кафедра систем искусственного интеллекта</a>' + '\n\n'
+        for command, description in COMMANDS.IKIT_13.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
     # Da informcaion acerca del bot
