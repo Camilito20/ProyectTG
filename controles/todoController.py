@@ -553,6 +553,102 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
+    ##Институт космических и информационных технологий
+    async  def IMIFI(update: Update, context: CallbackContext):
+        help_text = 'Институт математики и фундаментальной информатики(<a href = "http://math.sfu-kras.ru/">ИМиФИ</a>)' + '\n\n'
+        for command, description in COMMANDS.IMIFI.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_IMIFI(update: Update, context: CallbackContext):
+        direccion_IMIFI = '<a href = "https://go.2gis.com/xkQcf">Свободный проспект, 79</a>'
+        await update.message.reply_text(direccion_IMIFI, parse_mode="HTML")
+
+    async def profesores_IMIFI(update: Update, context: CallbackContext):
+        help_text = 'Это профессора <a href = "https://structure.sfu-kras.ru/math#main">ИМиФИ</a>' + '\n\n'
+        for command, description in COMMANDS.profesores_IMIFI.items():
+            help_text += f'{command}: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_1(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/159#staff">Базовая кафедра вычислительных и информационных технологий</a>' + '\n\n'
+        for command, descripton in COMMANDS.IMIFI_1.items():
+            help_text += f'<b><u>{command}</u></b>: {descripton}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_2(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/160#staff">Базовая кафедра математического моделирования и процессов управления</a>' + '\n\n'
+        for command, description in COMMANDS.IMIFI_2.items():
+            help_text += f'<u><b>{command}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    async def IMIFI_3(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/168#staff">Директорат ИМиФИ</a>' + '\n\n'
+        for command, descripton in COMMANDS.IMIFI_3.items():
+            help_text += f'<u><b>{command}</b></u>: {descripton}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_4(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/156">Кафедра алгебры и математической логики</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_4.items():
+            help_text += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_5(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/161">Кафедра высшей и прикладной математики</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_5.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_6(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/162">Кафедра высшей математики № 2</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_6.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_7(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/157">Кафедра математического анализа и дифференциальных уравнений</a>' + '\n\n'
+        for commands,  description in COMMANDS.IMIFI_7.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_8(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/164">Кафедра математического обеспечения дискретных устройств и систем</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_8.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_9(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/node/158">Кафедра теории функций</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_9.items():
+            help_text += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IMIFI_10(update: Update, context: CallbackContext):
+        help_text = '<a href = "https://structure.sfu-kras.ru/complex-lab#staff">Лаборатория комплексного анализа и дифференциальных уравнений</a>' + '\n\n'
+        for commands, description in COMMANDS.IMIFI_10.items():
+            help_text += f"<u><b>{commands}</b></u>: {description}\n"
+        await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
+
+
+    #Институт нефти и газа
+    async def INIG(update: Update, context: CallbackContext):
+        texto = 'это профессора<a href ="http://inig.sfu-kras.ru/">Институт нефти и газа</a>' + "\n\n"
+        for commands, description in COMMANDS.INIG.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_INIG(update: Update, context: CallbackContext):
+        direccion = '<a href = "https://go.2gis.com/ysjjZ">Свободный проспект, 82 ст6</a>'
+        await update.message.reply_text(direccion, parse_mode="HTML")
+
+    async def profesoeres_INIG(update: Update, context: CallbackContext):
+        texto = 'Это <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
+        for commands, description in COMMANDS.profesores_INIG.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
     # Da informcaion acerca del bot
     async def Info(update: Update, context: CallbackContext):
         await update.message.reply_text("Este es un bot que te va ayudar a encontar informacion sobre la universidad de SFU")

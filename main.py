@@ -98,6 +98,25 @@ application.add_handler( CommandHandler( "IKIT_11", TodoContollrer.IKIT_11))
 application.add_handler( CommandHandler( "IKIT_12", TodoContollrer.IKIT_12))
 application.add_handler( CommandHandler( "IKIT_13", TodoContollrer.IKIT_13))
 
+"""Институт математики и фундаментальной информатики"""
+application.add_handler( CommandHandler( "IMIFI", TodoContollrer.IMIFI))
+application.add_handler( CommandHandler( "address_IMIFI", TodoContollrer.direccion_IMIFI))
+application.add_handler( CommandHandler( "techers_IMIFI", TodoContollrer.profesores_IMIFI))
+application.add_handler( CommandHandler( "IMIFI_1", TodoContollrer.IMIFI_1))
+application.add_handler( CommandHandler( "IMIFI_2", TodoContollrer.IMIFI_2))
+application.add_handler( CommandHandler( "IMIFI_3", TodoContollrer.IMIFI_3))
+application.add_handler( CommandHandler( "IMIFI_4", TodoContollrer.IMIFI_4))
+application.add_handler( CommandHandler( "IMIFI_5", TodoContollrer.IMIFI_5))
+application.add_handler( CommandHandler( "IMIFI_6", TodoContollrer.IMIFI_6))
+application.add_handler( CommandHandler( "IMIFI_7", TodoContollrer.IMIFI_7))
+application.add_handler( CommandHandler( "IMIFI_8", TodoContollrer.IMIFI_8))
+application.add_handler( CommandHandler( "IMIFI_9", TodoContollrer.IMIFI_9))
+application.add_handler( CommandHandler( "IMIFI_10", TodoContollrer.IMIFI_10))
+
+""""Институт нефти и газа"""
+application.add_handler( CommandHandler( "INIG", TodoContollrer.INIG))
+application.add_handler( CommandHandler( "address_INIG", TodoContollrer.direccion_INIG))
+application.add_handler( CommandHandler( "techers_INIG", TodoContollrer.profesoeres_INIG))
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)
