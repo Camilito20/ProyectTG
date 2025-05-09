@@ -582,7 +582,6 @@ class TodoContollrer:
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
 
-
     async def IMIFI_3(update: Update, context: CallbackContext):
         help_text = '<a href = "https://structure.sfu-kras.ru/node/168#staff">Директорат ИМиФИ</a>' + '\n\n'
         for command, descripton in COMMANDS.IMIFI_3.items():
@@ -647,6 +646,102 @@ class TodoContollrer:
         texto = 'Это <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
         for commands, description in COMMANDS.profesores_INIG.items():
             texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_1(update: Update, context: CallbackContext):
+        texto = '<a href = "https://structure.sfu-kras.ru/node/2143#staff">Базовая кафедра проектирования объектов нефтегазового комплекса</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_1.items():
+            texto += f'<u><b>{commands}</b></u>: {description}'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_2(update: Update, context: CallbackContext):
+        texto = '<a href = "https://structure.sfu-kras.ru/node/121#staff">Базовая кафедра химии и технологии природных энергоносителей и углеродных материалов</a>' + '\n\n'
+        for commands, descrption in COMMANDS.INIG_2.items():
+            texto += f'<u><b>{commands}</b></u>: {descrption}\n'  + '\n\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_3(update: Update, context: CallbackContext):
+        texto = '<a href = "https://structure.sfu-kras.ru/node/130#staff">Кафедра авиационных горюче-смазочных материалов</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_3.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_4(update: Update, context: CallbackContext):
+        texto = '<a href = "https://structure.sfu-kras.ru/node/127#staff">Кафедра бурения нефтяных и газовых скважин</a>'  + '\n\n'
+        for commands, description in COMMANDS.INIG_4.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_5(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/124">Кафедра геологии нефти и газа</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_5.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_6(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/126#staff">Кафедра геофизики</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_6.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_7(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/120">Кафедра машин и оборудования нефтяных и газовых промыслов</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_7.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_8(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/134">Кафедра пожарной безопасности</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_8.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_9(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/131">Кафедра проектирования и эксплуатации газонефтепроводов</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_9.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_10(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/129">Кафедра разработки и эксплуатации нефтяных и газовых месторождений</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_10.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_11(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/132">Кафедра технологических машин и оборудования нефтегазового комплекса</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_11.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_12(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/119">Кафедра топливообеспечения и горюче-смазочных материалов</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_12.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_13(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/1993">Научно-образовательный центр «Корпоративный нефтегазовый центр СФУ</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_13.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_14(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/5708">Учебно-научная лаборатория</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_14.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_15(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/114">Учебно-организационный отдел ИНиГ</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_15.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def INIG_16(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/ckp">Центр коллективного пользования</a>' + '\n\n'
+        for commands, description in COMMANDS.INIG_16.items():
+            texto += f'<u><b>{commands}</b></u>\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
     # Da informcaion acerca del bot
