@@ -134,6 +134,18 @@ application.add_handler( CommandHandler( "INIG_14", TodoContollrer.INIG_14))
 application.add_handler( CommandHandler( "INIG_15", TodoContollrer.INIG_15))
 application.add_handler( CommandHandler( "INIG_16", TodoContollrer.INIG_16))
 
+"""Институт педагогики, психологии и социологии"""
+application.add_handler( CommandHandler( "IPPS", TodoContollrer.IPPS))
+application.add_handler( CommandHandler( "address_IPPS", TodoContollrer.direccion_IPPS))
+application.add_handler( CommandHandler( "techers_IPPS", TodoContollrer.profesores_IPPS))
+application.add_handler( CommandHandler( "IPPS_1", TodoContollrer.IPPS_1))
+application.add_handler( CommandHandler( "IPPS_2", TodoContollrer.IPPS_2))
+application.add_handler( CommandHandler( "IPPS_3", TodoContollrer.IPPS_3))
+application.add_handler( CommandHandler( "IPPS_4", TodoContollrer.IPPS_4))
+application.add_handler( CommandHandler( "IPPS_5", TodoContollrer.IPPS_5))
+application.add_handler( CommandHandler( "IPPS_6", TodoContollrer.IPPS_6))
+application.add_handler( CommandHandler( "IPPS_7", TodoContollrer.IPPS_7))
+application.add_handler( CommandHandler( "IPPS_8", TodoContollrer.IPPS_8))
 
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)

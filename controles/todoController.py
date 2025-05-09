@@ -633,7 +633,7 @@ class TodoContollrer:
 
     #Институт нефти и газа
     async def INIG(update: Update, context: CallbackContext):
-        texto = 'это профессора<a href ="http://inig.sfu-kras.ru/">Институт нефти и газа</a>' + "\n\n"
+        texto = 'Институт нефти и газа(<a href ="http://inig.sfu-kras.ru/">Иниг</a>)' + "\n\n"
         for commands, description in COMMANDS.INIG.items():
             texto += f'{commands}: {description}\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
@@ -643,7 +643,7 @@ class TodoContollrer:
         await update.message.reply_text(direccion, parse_mode="HTML")
 
     async def profesoeres_INIG(update: Update, context: CallbackContext):
-        texto = 'Это <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
+        texto = 'Это профессора <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
         for commands, description in COMMANDS.profesores_INIG.items():
             texto += f'<u><b>{commands}</b></u>: {description}\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
@@ -744,9 +744,74 @@ class TodoContollrer:
             texto += f'<u><b>{commands}</b></u>\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
+    #Институт педагогики, психологии и социологии
+    async def IPPS(update: Update, context: CallbackContext):
+        texto = 'Институт педагогики, психологии и социологии(<a href="http://www.ipps.sfu-kras.ru/ru/">ИППС</a>)' + '\n\n'
+        for commands, description in COMMANDS.IPPS.items():
+            texto += f"{commands}: {description}\n"
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_IPPS(update: Update, context: CallbackContext):
+        direccion = '<a href="https://go.2gis.com/aEu09">Свободный проспект, 79 ст1</a>'
+        await update.message.reply_text(direccion, parse_mode="HTML")
+
+    async def profesores_IPPS(update: Update, context: CallbackContext):
+        texto = 'Это профессора <a href="https://structure.sfu-kras.ru/ipps#main">ИППС</a>' + "\n\n"
+        for commands, description in COMMANDS.profesores_IPPS.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_1(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/264#staff">Кафедра информационных технологий обучения и непрерывного образования</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_1.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_2(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/271#staff">афедра общей и социальной педагогики</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_2.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_3(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/266#staff">Кафедра психологии развития и консультирования</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_3.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_4(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/274#staff">Кафедра современных образовательных технологий</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_4.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_5(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/273#staff">Кафедра социологии</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_5.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_6(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/270">Студия изобразительного искусства</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_6.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_7(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/257#staff">Учебно-организационный отдел</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_7.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IPPS_8(updates: Update, contexto: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/4936">Центр медиации в образовании</a>' + '\n\n'
+        for commmands, description in COMMANDS.IPPS_8.items():
+            texto += f'<u><b>{commmands}</b></u>: {description}\n'
+        await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
     # Da informcaion acerca del bot
     async def Info(update: Update, context: CallbackContext):
-        await update.message.reply_text("Este es un bot que te va ayudar a encontar informacion sobre la universidad de SFU")
+        await update.message.reply_text("Это бот, который поможет вам найти информацию об университете СФУ.")
 
     #Da todos los comandos disponibles
     async def help_command(update: Update, context: CallbackContext) -> None:
