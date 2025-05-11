@@ -809,7 +809,49 @@ class TodoContollrer:
             texto += f'<u><b>{commmands}</b></u>: {description}\n'
         await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
-    # Da informcaion acerca del bot
+
+    async def ISIA(update: Update, context: CallbackContext):
+        texto = 'Институт Севера и Арктики(<a href="https://arctic.sfu-kras.ru/">ИСИА</a>' + "\n\n"
+        for commands, description in COMMANDS.ISIA.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_ISIA(update: Update, context: CallbackContext):
+        direccion = '<a href="https://go.2gis.com/KudXl">Улица Борисова, 5</a>'
+        await update.message.reply_text(direccion, parse_mode="HTML")
+
+    async def profesores_ISIA(update: Update, context: CallbackContext):
+        texto = 'Это Професорра <a href="https://structure.sfu-kras.ru/node/4797">ИСИА</a>' + '\n\n'
+        for commands, description in COMMANDS.profesores_ISIA.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def ISIA_1(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/4847#staff">Кафедра северных и арктических исследований</a>' + '\n\n'
+        for commands, description in COMMANDS.ISIA_1.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def ISIA_2(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/4848#staff">Международная бизнес-школа «Арктика»</a>' + '\n\n'
+        for commands, description in COMMANDS.ISIA_2.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def ISIA_3(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/4849">Международная северная школа</a>' + '\n\n'
+        for commands, description in COMMANDS.ISIA_3.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HMTL", disable_web_page_preview=True)
+
+    async def ISIA_4(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/5458#staff">Проектный офис</a>' + '\n\n'
+        for commands, description in COMMANDS.ISIA_4.items():
+            texto += f'<u><b>{commands}</b></u>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HMTL", disable_web_page_preview=True)
+
+
+    #Da informcaion acerca del bot
     async def Info(update: Update, context: CallbackContext):
         await update.message.reply_text("Это бот, который поможет вам найти информацию об университете СФУ.")
 
