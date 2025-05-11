@@ -71,7 +71,7 @@ class TodoContollrer:
 
 
     async  def techers_BII(update: Update, context: ContextTypes):
-        texto_htlm = '<a href = "https://structure.sfu-kras.ru/vii#staff">ВИИ</a>'
+        texto_htlm = 'это преподаватели <a href = "https://structure.sfu-kras.ru/vii#staff">ВИИ</a>'
         help_text = "Это профессора Военно-инженерного института."+ texto_htlm
         for command, description in COMMANDS.techers_BII.items():
             help_text += f'<u><b>{command}</b></u>: {description}'
@@ -108,7 +108,7 @@ class TodoContollrer:
 
 
     async def profesir_GI(update: Update, context: CallbackContext):
-        help_text = "estos son los profesores de GI: \n\n"
+        help_text = "это преподаватели: \n\n"
         for command, description in COMMANDS.profesores_Gi.items():
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML")
@@ -210,7 +210,7 @@ class TodoContollrer:
 
     async def profesores_ICI(update: Update, context: CallbackContext):
         texto_html = '<a href = "https://structure.sfu-kras.ru/isi#structure">Инженерно-строительный институт</a>\n\n'
-        help_text = f"Это профессора {texto_html}"
+        help_text = f"Это преподаватели {texto_html}"
         for command, description in COMMANDS.profesores_ICI.items():
             help_text += f'<u><b>{command}</b></u>: {description}'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
@@ -275,7 +275,7 @@ class TodoContollrer:
 
 
     async def profesores_IAID(update: Update, contexto: CallbackContext):
-        help_text = 'преподаватели <a href = "https://structure.sfu-kras.ru/iad#staff">ИАиД' + '\n\n'
+        help_text = 'это преподаватели <a href = "https://structure.sfu-kras.ru/iad#staff">ИАиД' + '\n\n'
         for command, description in COMMANDS.profesores_IAID.items():
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
@@ -336,7 +336,7 @@ class TodoContollrer:
 
 
     async  def profesore_iifire(update: Update, context: CallbackContext):
-        help_text = 'Это профессора <a href = "https://structure.sfu-kras.ru/efir#structure">ИИФиРЭ</a>' + '\n\n'
+        help_text = 'Это преподаватели <a href = "https://structure.sfu-kras.ru/efir#structure">ИИФиРЭ</a>' + '\n\n'
         for commands, description in COMMANDS.profesores_iifire.items():
             help_text += f'<u><b>{commands}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
@@ -457,7 +457,7 @@ class TodoContollrer:
         await update.message.reply_text("Адрес Институт космических и информационных технологий \n\n" + direccion, parse_mode="HTML")
 
     async def profesores_IKIT(update: Update, context: CallbackContext):
-        help_text = 'Это профессора<a href = "ИКИТ"></a>' + '\n\n'
+        help_text = 'Это преподаватели<a href = "ИКИТ"></a>' + '\n\n'
         for command, description in COMMANDS.profesores_IKIT.items():
             help_text += f'<u><b>{command}</b></u>: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
@@ -565,7 +565,7 @@ class TodoContollrer:
         await update.message.reply_text(direccion_IMIFI, parse_mode="HTML")
 
     async def profesores_IMIFI(update: Update, context: CallbackContext):
-        help_text = 'Это профессора <a href = "https://structure.sfu-kras.ru/math#main">ИМиФИ</a>' + '\n\n'
+        help_text = 'Это преподаватели <a href = "https://structure.sfu-kras.ru/math#main">ИМиФИ</a>' + '\n\n'
         for command, description in COMMANDS.profesores_IMIFI.items():
             help_text += f'{command}: {description}\n'
         await update.message.reply_text(help_text, parse_mode="HTML", disable_web_page_preview=True)
@@ -643,7 +643,7 @@ class TodoContollrer:
         await update.message.reply_text(direccion, parse_mode="HTML")
 
     async def profesoeres_INIG(update: Update, context: CallbackContext):
-        texto = 'Это профессора <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
+        texto = 'Это преподаватели <a href = "https://structure.sfu-kras.ru/node/2143#staff">ИНиГ</a>' + '\n\n'
         for commands, description in COMMANDS.profesores_INIG.items():
             texto += f'<u><b>{commands}</b></u>: {description}\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
@@ -756,7 +756,7 @@ class TodoContollrer:
         await update.message.reply_text(direccion, parse_mode="HTML")
 
     async def profesores_IPPS(update: Update, context: CallbackContext):
-        texto = 'Это профессора <a href="https://structure.sfu-kras.ru/ipps#main">ИППС</a>' + "\n\n"
+        texto = 'Это преподаватели <a href="https://structure.sfu-kras.ru/ipps#main">ИППС</a>' + "\n\n"
         for commands, description in COMMANDS.profesores_IPPS.items():
             texto += f'{commands}: {description}\n'
         await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
@@ -809,7 +809,7 @@ class TodoContollrer:
             texto += f'<u><b>{commmands}</b></u>: {description}\n'
         await updates.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
-
+    #Институт Севера и Арктики
     async def ISIA(update: Update, context: CallbackContext):
         texto = 'Институт Севера и Арктики(<a href="https://arctic.sfu-kras.ru/">ИСИА</a>' + "\n\n"
         for commands, description in COMMANDS.ISIA.items():
@@ -842,13 +842,66 @@ class TodoContollrer:
         texto = '<a href="https://structure.sfu-kras.ru/node/4849">Международная северная школа</a>' + '\n\n'
         for commands, description in COMMANDS.ISIA_3.items():
             texto += f'<u><b>{commands}</b></u>: {description}\n'
-        await update.message.reply_text(texto, parse_mode="HMTL", disable_web_page_preview=True)
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
     async def ISIA_4(update: Update, context: CallbackContext):
         texto = '<a href="https://structure.sfu-kras.ru/node/5458#staff">Проектный офис</a>' + '\n\n'
         for commands, description in COMMANDS.ISIA_4.items():
             texto += f'<u><b>{commands}</b></u>: {description}\n'
-        await update.message.reply_text(texto, parse_mode="HMTL", disable_web_page_preview=True)
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    #Институт физической культуры, спорта и туризма
+    async def IFRSIT(update: Update, context: CallbackContext):
+        texto = 'Институт физической культуры, спорта и туризма(<a href="https://ifksit.sfu-kras.ru/">ИФКСиТ</a>)' + '\n\n'
+        for commands,description in COMMANDS.IFKSIT.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def direccion_IFRSIT(update: Update, context: CallbackContext):
+        direccion = '<a href="https://go.2gis.com/x9LRd">Свободный проспект, 79Б</a>'
+        await update.message.reply_text(direccion, parse_mode="HTML")
+
+    async def profesores_IFRSIT(update: Update, context: CallbackContext):
+        texto = 'это преподаватели <a href="">ИФКСиТ</a>' + '\n\n'
+        for commands, description in COMMANDS.profesores_IFIKSIT.items():
+            texto += f'{commands}: {description}\n'
+        await update.message.reply_text(texto,parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_1(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/504#staff">Кафедра теоретических основ и менеджмента физической культуры и туризма</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_1.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_2(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/507#staff">Кафедра теории и методики спортивных дисциплин</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_2.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_3(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/508#staff">Кафедра физической культуры</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_3.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_4(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/6195#staff">Лаборатория спорта и туризма</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_4.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_5(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/sportclub#staff">Спортивный клуб</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_5.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
+
+    async def IFRSIT_6(update: Update, context: CallbackContext):
+        texto = '<a href="https://structure.sfu-kras.ru/node/524#staff">Учебно-организационный отдел</a>' + '\n\n'
+        for commands,  description in COMMANDS.IFKSIT_6.items():
+            texto += f'<b><u>{commands}</u></b>: {description}\n'
+        await update.message.reply_text(texto, parse_mode="HTML", disable_web_page_preview=True)
 
 
     #Da informcaion acerca del bot

@@ -147,5 +147,25 @@ application.add_handler( CommandHandler( "IPPS_6", TodoContollrer.IPPS_6))
 application.add_handler( CommandHandler( "IPPS_7", TodoContollrer.IPPS_7))
 application.add_handler( CommandHandler( "IPPS_8", TodoContollrer.IPPS_8))
 
+"""Институт Севера и Арктики"""
+application.add_handler( CommandHandler( "ISIA", TodoContollrer.ISIA))
+application.add_handler( CommandHandler( "address_ISIA", TodoContollrer.direccion_ISIA))
+application.add_handler( CommandHandler( "techers_ISIA", TodoContollrer.profesores_ISIA))
+application.add_handler( CommandHandler( "ISIA_1", TodoContollrer.ISIA_1))
+application.add_handler( CommandHandler( "ISIA_2", TodoContollrer.ISIA_2))
+application.add_handler( CommandHandler( "ISIA_3", TodoContollrer.ISIA_3))
+application.add_handler( CommandHandler( "ISIA_4", TodoContollrer.ISIA_4))
+
+"""Институт физической культуры, спорта и туризма"""
+application.add_handler( CommandHandler( "IFKSIT", TodoContollrer.IFRSIT))
+application.add_handler( CommandHandler( "techers_IFKSIT", TodoContollrer.profesores_IFRSIT))
+application.add_handler( CommandHandler( "address_IFKSIT", TodoContollrer.direccion_IFRSIT))
+application.add_handler( CommandHandler( "IFKSIT_1", TodoContollrer.IFRSIT_1))
+application.add_handler( CommandHandler( "IFKSIT_2", TodoContollrer.IFRSIT_2))
+application.add_handler( CommandHandler( "IFKSIT_3", TodoContollrer.IFRSIT_3))
+application.add_handler( CommandHandler( "IFKSIT_4", TodoContollrer.IFRSIT_4))
+application.add_handler( CommandHandler( "IFKSIT_5", TodoContollrer.IFRSIT_5))
+application.add_handler( CommandHandler( "IFKSIT_6", TodoContollrer.IFRSIT_6))
+
 
 application.run_polling(allowed_updates=Update.ALL_TYPES)
